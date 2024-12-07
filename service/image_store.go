@@ -27,14 +27,6 @@ type ImageInfo struct {
 	Path     string
 }
 
-// NewDiskImageStore returns a new DiskImageStore
-func NewDiskImageStore(imageFolder string) *DiskImageStore {
-	return &DiskImageStore{
-		imageFolder: imageFolder,
-		images:      make(map[string]*ImageInfo),
-	}
-}
-
 func (store *DiskImageStore) Save(
 	laptopID string,
 	imageType string,
@@ -67,4 +59,12 @@ func (store *DiskImageStore) Save(
 	}
 
 	return imageID.String(), nil
+}
+
+// NewDiskImageStore returns a new DiskImageStore
+func NewDiskImageStore(imageFolder string) *DiskImageStore {
+	return &DiskImageStore{
+		imageFolder: imageFolder,
+		images:      make(map[string]*ImageInfo),
+	}
 }

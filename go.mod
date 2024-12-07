@@ -3,9 +3,11 @@ module github.com/adwait-godbole/learning-grpc
 go 1.23.2
 
 require (
+	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.6.0
 	github.com/jinzhu/copier v0.4.0
 	github.com/stretchr/testify v1.10.0
+	golang.org/x/crypto v0.27.0
 	google.golang.org/grpc v1.68.1
 	google.golang.org/protobuf v1.35.2
 )
