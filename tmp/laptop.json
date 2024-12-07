@@ -1,0 +1,62 @@
+{
+  "id":  "824bf4a0-8495-47c5-bee8-b4994f65d21b",
+  "brand":  "Dell",
+  "name":  "Vostro",
+  "cpu":  {
+    "brand":  "Intel",
+    "name":  "Xeon E-2286M",
+    "number_cores":  2,
+    "number_threads":  6,
+    "min_ghz":  3.3285340210446908,
+    "max_ghz":  4.219757187777856
+  },
+  "ram":  {
+    "value":  "55",
+    "unit":  "GIGABYTE"
+  },
+  "gpus":  [
+    {
+      "brand":  "AMD",
+      "name":  "RX 590",
+      "min_ghz":  1.4982026619967936,
+      "max_ghz":  1.8307116193500699,
+      "memory":  {
+        "value":  "4",
+        "unit":  "GIGABYTE"
+      }
+    }
+  ],
+  "storages":  [
+    {
+      "memory":  {
+        "value":  "150",
+        "unit":  "GIGABYTE"
+      },
+      "driver":  "SSD"
+    },
+    {
+      "memory":  {
+        "value":  "6",
+        "unit":  "TERABYTE"
+      },
+      "driver":  "HDD"
+    }
+  ],
+  "screen":  {
+    "size_inch":  13.787361,
+    "resolution":  {
+      "width":  4784,
+      "height":  2691
+    },
+    "panel":  "IPS",
+    "multitouch":  true
+  },
+  "keyboard":  {
+    "layout":  "QWERTY",
+    "backlit":  true
+  },
+  "weight_kg":  1.9795786193708655,
+  "price_usd":  3304.873927423391,
+  "release_year":  2019,
+  "updated_at":  "2024-12-07T07:02:58.268071815Z"
+}
