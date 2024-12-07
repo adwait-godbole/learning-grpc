@@ -10,5 +10,8 @@ server:
 client:
 	go run cmd/client/main.go -address 0.0.0.0:8080
 
+start-evans-client:
+	evans -r repl -p 8080
+
 test:
 	go test -v -cover -race ./...

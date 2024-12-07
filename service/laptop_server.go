@@ -87,7 +87,7 @@ func (server *LaptopServer) SearchLaptop(
 	stream pb.LaptopService_SearchLaptopServer,
 ) error {
 	filter := req.GetFilter()
-	log.Printf("receive a search-laptop request with filter: %v", filter)
+	log.Printf("received a search-laptop request with filter: %v", filter)
 
 	err := server.laptopStore.Search(
 		stream.Context(),
@@ -123,7 +123,7 @@ func (server *LaptopServer) UploadImage(
 
 	laptopID := req.GetInfo().GetLaptopId()
 	imageType := req.GetInfo().GetImageType()
-	log.Printf("receive an upload-image request for laptop %s with image type %s", laptopID, imageType)
+	log.Printf("received an upload-image request for laptop %s with image type %s", laptopID, imageType)
 
 	laptop, err := server.laptopStore.Find(laptopID)
 	if err != nil {
